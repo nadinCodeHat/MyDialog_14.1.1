@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:height="32dp" android:width="32dp" android:viewportWidth="25.76" android:viewportHeight="19.49">
+    <path android:fillColor="@color/madme_slider_sign_background_color" android:pathData="M23.58,13.86 L2.18,13.86A1.55,1.55 0,0 1,0.5 12.49L0.5,1.85A1.55,1.55 0,0 1,2.18 0.5h21.4a1.55,1.55 0,0 1,1.68 1.35h0L25.26,12.49A1.55,1.55 0,0 1,23.58 13.86ZM9.58,13.86L13,16.75l3.46,-2.84ZM12.9,19.45" android:strokeColor="@color/madme_slider_sign_background_color" android:strokeWidth="1"/>
+</vector>

@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:background="@drawable/madme_dropdown_item_background" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <com.madme.mobile.sdk.fragments.survey.SurveyTextView android:textSize="@dimen/madme_dropdown_item_text_size" android:textColor="@color/madme_dropdown_item_text_color" android:ellipsize="marquee" android:gravity="left|center_vertical|center_horizontal|center|start" android:id="@android:id/text1" android:layout_width="match_parent" android:layout_height="match_parent" android:singleLine="true" style="?android:attr/spinnerDropDownItemStyle"/>
+</FrameLayout>

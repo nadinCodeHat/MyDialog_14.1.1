@@ -1,0 +1,373 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:versionCode="17146828" android:versionName="14.1.1" android:compileSdkVersion="30" android:compileSdkVersionCodename="11" package="net.omobio.dialogsc" platformBuildVersionCode="30" platformBuildVersionName="11">
+    <uses-sdk android:minSdkVersion="16" android:targetSdkVersion="30"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW"/>
+    <uses-permission android:name="android.permission.CAMERA"/>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"/>
+    <uses-permission android:name="android.permission.VIBRATE"/>
+    <uses-permission android:name="android.permission.READ_SMS"/>
+    <uses-permission android:name="android.permission.READ_CONTACTS"/>
+    <uses-permission android:name="android.permission.READ_PROFILE"/>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.PROCESS_OUTGOING_CALLS"/>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE"/>
+    <uses-permission android:name="android.permission.CALL_PHONE"/>
+    <uses-feature android:name="android.hardware.location.gps"/>
+    <uses-feature android:name="android.hardware.camera"/>
+    <uses-permission android:name="android.permission.USE_FINGERPRINT"/>
+    <uses-permission android:name="android.permission.USE_BIOMETRIC"/>
+    <uses-permission android:name="com.android.vending.CHECK_LICENSE"/>
+    <uses-permission android:name="android.permission.WAKE_LOCK"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-feature android:name="android.hardware.camera.autofocus" android:required="false"/>
+    <uses-permission android:name="android.permission.RECEIVE_SMS"/>
+    <uses-permission android:name="android.permission.WRITE_CALENDAR"/>
+    <uses-permission android:name="android.permission.READ_CALENDAR"/>
+    <uses-permission android:name="com.sec.android.provider.badge.permission.READ"/>
+    <uses-permission android:name="com.sec.android.provider.badge.permission.WRITE"/>
+    <uses-permission android:name="com.htc.launcher.permission.READ_SETTINGS"/>
+    <uses-permission android:name="com.htc.launcher.permission.UPDATE_SHORTCUT"/>
+    <uses-permission android:name="com.sonyericsson.home.permission.BROADCAST_BADGE"/>
+    <uses-permission android:name="com.sonymobile.home.permission.PROVIDER_INSERT_BADGE"/>
+    <uses-permission android:name="com.anddoes.launcher.permission.UPDATE_COUNT"/>
+    <uses-permission android:name="com.majeur.launcher.permission.UPDATE_BADGE"/>
+    <uses-permission android:name="com.huawei.android.launcher.permission.CHANGE_BADGE"/>
+    <uses-permission android:name="com.huawei.android.launcher.permission.READ_SETTINGS"/>
+    <uses-permission android:name="com.huawei.android.launcher.permission.WRITE_SETTINGS"/>
+    <uses-permission android:name="android.permission.READ_APP_BADGE"/>
+    <uses-permission android:name="com.oppo.launcher.permission.READ_SETTINGS"/>
+    <uses-permission android:name="com.oppo.launcher.permission.WRITE_SETTINGS"/>
+    <uses-permission android:name="me.everything.badger.permission.BADGE_COUNT_READ"/>
+    <uses-permission android:name="me.everything.badger.permission.BADGE_COUNT_WRITE"/>
+    <uses-permission android:name="android.permission.WRITE_INTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE"/>
+    <uses-feature android:glEsVersion="20000" android:required="true"/>
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE"/>
+    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES"/>
+    <uses-permission android:name="com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE"/>
+    <application android:theme="@style/AppTheme" android:label="@string/app_name" android:icon="@mipmap/ic_launcher" android:name="net.omobio.dialogsc.MainApplication" android:allowBackup="false" android:largeHeap="true" android:supportsRtl="true" android:fullBackupContent="@xml/appsflyer_backup_rules" android:networkSecurityConfig="@xml/network_security_config" android:appComponentFactory="androidx.core.app.CoreComponentFactory">
+        <activity android:label="@string/app_name" android:name="net.omobio.dialogsc.MainActivity" android:exported="true" android:launchMode="singleTop" android:configChanges="keyboard|keyboardHidden|orientation|screenSize" android:windowSoftInputMode="adjustPan">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+            <intent-filter android:label="filter_react_native">
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:scheme="dgselfcare" android:host="navigate"/>
+                <data android:scheme="https" android:host="dgselfcare"/>
+            </intent-filter>
+        </activity>
+        <activity android:name="com.facebook.react.devsupport.DevSettingsActivity"/>
+        <meta-data android:name="com.facebook.sdk.ApplicationId" android:value="@string/facebook_app_id"/>
+        <provider android:name="com.facebook.FacebookContentProvider" android:exported="true" android:authorities="com.facebook.app.FacebookContentProvider545502922166417"/>
+        <receiver android:name="net.omobio.dialogsc.FirebaseDataReceiver" android:permission="com.google.android.c2dm.permission.SEND" android:exported="true">
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.RECEIVE"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:name="com.dieam.reactnativepushnotification.modules.RNPushNotificationActions"/>
+        <receiver android:name="com.dieam.reactnativepushnotification.modules.RNPushNotificationPublisher"/>
+        <receiver android:name="com.dieam.reactnativepushnotification.modules.RNPushNotificationBootEventReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED"/>
+                <action android:name="android.intent.action.QUICKBOOT_POWERON"/>
+                <action android:name="com.htc.intent.action.QUICKBOOT_POWERON"/>
+            </intent-filter>
+        </receiver>
+        <meta-data android:name="com.google.android.gms.ads.AD_MANAGER_APP" android:value="true"/>
+        <meta-data android:name="com.google.android.geo.API_KEY" android:value="AIzaSyBKoHwuKvI4r3aI3gO7gCF5KgDejhagigE"/>
+        <meta-data android:name="com.google.firebase.messaging.default_notification_icon" android:resource="@mipmap/ic_notif"/>
+        <meta-data android:name="firebase_crashlytics_collection_enabled" android:value="false"/>
+        <provider android:name="androidx.core.content.FileProvider" android:exported="false" android:authorities="{$applicationId}.fileprovider" android:grantUriPermissions="true">
+            <meta-data android:name="android.support.FILE_PROVIDER_PATHS" android:resource="@xml/provider_paths"/>
+        </provider>
+        <meta-data android:name="smooch_app_id" android:value="5bbaff0c89aae20022c23a36"/>
+        <meta-data android:name="com.dieam.reactnativepushnotification.notification_color" android:resource="@color/white"/>
+        <provider android:name="com.RNFetchBlob.Utils.FileProvider" android:exported="false" android:authorities="net.omobio.dialogsc.provider" android:grantUriPermissions="true">
+            <meta-data android:name="android.support.FILE_PROVIDER_PATHS" android:resource="@xml/provider_paths"/>
+        </provider>
+        <provider android:name="net.omobio.reactnative.imageuploader.FileProvider" android:exported="false" android:authorities="net.omobio.dialogsc.provider" android:grantUriPermissions="true">
+            <meta-data android:name="android.support.FILE_PROVIDER_PATHS" android:resource="@xml/file_viewer_provider_paths"/>
+        </provider>
+        <activity android:theme="@style/Theme.AppCompat.Light.NoActionBar" android:name="com.yalantis.ucrop.UCropActivity" android:screenOrientation="portrait"/>
+        <receiver android:name="com.learnium.RNDeviceInfo.RNDeviceReceiver" android:enabled="true" android:exported="true">
+            <intent-filter>
+                <action android:name="com.android.vending.INSTALL_REFERRER"/>
+            </intent-filter>
+        </receiver>
+        <provider android:name="com.imagepicker.ImagePickerProvider" android:exported="false" android:authorities="net.omobio.dialogsc.imagepickerprovider" android:grantUriPermissions="true">
+            <meta-data android:name="android.support.FILE_PROVIDER_PATHS" android:resource="@xml/imagepicker_provider_paths"/>
+        </provider>
+        <provider android:name="com.reactnativecommunity.webview.RNCWebViewFileProvider" android:exported="false" android:authorities="net.omobio.dialogsc.fileprovider" android:grantUriPermissions="true">
+            <meta-data android:name="android.support.FILE_PROVIDER_PATHS" android:resource="@xml/file_provider_paths"/>
+        </provider>
+        <meta-data android:name="App-ID" android:value="1012"/>
+        <meta-data android:name="Group-ID" android:value="uqerwcxueortlzqw"/>
+        <meta-data android:name="com.google.android.gms.version" android:value="@integer/google_play_services_version"/>
+        <activity android:theme="@style/MadmeAppTheme" android:name="com.madme.mobile.sdk.activity.profile.ChangeProfileActivity" android:exported="true" android:taskAffinity="@string/madme_task_affinity">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <data android:scheme="madme" android:host="net.omobio.dialogsc" android:path="/profile"/>
+            </intent-filter>
+        </activity>
+        <activity android:theme="@style/MadmeAdTheme" android:name="com.madme.mobile.sdk.activity.AdActivity" android:taskAffinity="@string/madme_task_affinity" android:screenOrientation="portrait" android:autoRemoveFromRecents="true"/>
+        <activity android:theme="@style/MadmeAdThemeOverlay" android:name="com.madme.mobile.sdk.activity.OverlayAdActivity" android:taskAffinity="@string/madme_task_affinity" android:screenOrientation="@integer/madme_orientation_8_0" android:autoRemoveFromRecents="true"/>
+        <activity android:theme="@style/MadmeSurveyTheme" android:name="com.madme.mobile.sdk.activity.SurveyActivity" android:taskAffinity="@string/madme_task_affinity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustResize" android:autoRemoveFromRecents="true"/>
+        <activity android:theme="@style/MadmeAppTheme" android:name="com.madme.mobile.sdk.activity.BrowserActivity" android:taskAffinity="@string/madme_task_affinity" android:screenOrientation="portrait" android:autoRemoveFromRecents="true"/>
+        <activity android:theme="@style/MadmeAdTheme" android:name="com.madme.mobile.sdk.activity.SavedAdActivity" android:taskAffinity="@string/madme_task_affinity" android:screenOrientation="portrait"/>
+        <activity android:theme="@style/MadmeAppTheme" android:name="com.madme.mobile.sdk.activity.MyOffersHistoryActivity" android:exported="true" android:taskAffinity="@string/madme_task_affinity">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <data android:scheme="madme" android:host="net.omobio.dialogsc" android:path="/gallery"/>
+            </intent-filter>
+        </activity>
+        <activity android:theme="@style/MadmeNoActionBarThemeLight" android:name="com.madme.mobile.sdk.activity.AdListActivity" android:enabled="@bool/madme_enable_ad_list" android:taskAffinity="@string/madme_task_affinity"/>
+        <activity android:theme="@style/MadmeAppTheme" android:name="com.madme.mobile.sdk.activity.WebViewActivity" android:taskAffinity="@string/madme_task_affinity"/>
+        <activity android:theme="@style/MadmeDialogTheme" android:label="@string/madme_menu_tcs" android:name="com.madme.mobile.sdk.activity.TermsActivity" android:taskAffinity="@string/madme_task_affinity" android:excludeFromRecents="true" android:noHistory="true"/>
+        <activity android:theme="@style/MadmeAppTheme" android:label="@string/madme_menu_tcs" android:name="com.madme.mobile.sdk.activity.LegalInformationActivityResources" android:taskAffinity="@string/madme_task_affinity"/>
+        <activity android:theme="@style/MadmeAppTheme" android:label="@string/madme_menu_benefits" android:name="com.madme.mobile.sdk.activity.BenefitsActivity" android:taskAffinity="@string/madme_task_affinity"/>
+        <activity android:theme="@style/MadmeAppTheme" android:label="@string/madme_menu_debug" android:name="com.madme.mobile.sdk.activity.MadmeDebugActivity" android:enabled="@bool/madme_debug_screen" android:taskAffinity="@string/madme_task_affinity" android:excludeFromRecents="true" android:launchMode="singleTask" android:screenOrientation="portrait"/>
+        <activity android:theme="@style/MadmePermissionActivity" android:name="com.madme.mobile.sdk.activity.MadmePermissionActivity" android:taskAffinity="@string/madme_task_affinity" android:launchMode="singleTask" android:screenOrientation="@integer/madme_orientation_8_0" android:alwaysRetainTaskState="false" android:autoRemoveFromRecents="true"/>
+        <activity android:theme="@style/MadmeThankYouTheme" android:name="com.madme.mobile.sdk.activity.ThankYouActivity" android:taskAffinity="@string/madme_task_affinity" android:excludeFromRecents="true" android:launchMode="singleTop" android:screenOrientation="portrait" android:noHistory="true"/>
+        <service android:name="com.madme.mobile.sdk.service.LoginService" android:permission="android.permission.BIND_JOB_SERVICE"/>
+        <service android:name="com.madme.mobile.sdk.service.DownloadService" android:permission="android.permission.BIND_JOB_SERVICE"/>
+        <service android:name="com.madme.mobile.sdk.service.DbUpdateService" android:permission="android.permission.BIND_JOB_SERVICE"/>
+        <service android:name="com.madme.mobile.sdk.service.AdAlarmHelperService" android:permission="android.permission.BIND_JOB_SERVICE"/>
+        <service android:name="com.madme.mobile.sdk.service.location.GeofenceService" android:permission="android.permission.BIND_JOB_SERVICE"/>
+        <service android:name="com.madme.mobile.sdk.service.ad.ShowAdService" android:permission="android.permission.BIND_JOB_SERVICE"/>
+        <service android:name="com.madme.mobile.sdk.service.TrackingService" android:permission="android.permission.BIND_JOB_SERVICE"/>
+        <service android:name="com.madme.mobile.sdk.service.AdTriggerEventsService" android:permission="android.permission.BIND_JOB_SERVICE"/>
+        <service android:name="com.madme.mobile.sdk.service.SBSTService" android:permission="android.permission.BIND_JOB_SERVICE" android:enabled="@bool/madme_enable_sbs"/>
+        <service android:name="com.madme.mobile.features.calllog.CallLogTrackingService" android:permission="android.permission.BIND_JOB_SERVICE" android:enabled="@bool/madme_enable_cicl"/>
+        <service android:name="com.madme.mobile.sdk.service.TrackingSubmissionService" android:enabled="@bool/madme_pre_o"/>
+        <service android:name="com.madme.mobile.sdk.service.TrackingSubmissionJobService" android:permission="android.permission.BIND_JOB_SERVICE" android:enabled="@bool/madme_o"/>
+        <service android:name="com.madme.mobile.sdk.service.SurveySubmissionService" android:enabled="@bool/madme_pre_o"/>
+        <service android:name="com.madme.mobile.sdk.service.SurveySubmissionJobService" android:permission="android.permission.BIND_JOB_SERVICE" android:enabled="@bool/madme_o"/>
+        <service android:name="com.madme.mobile.sdk.service.CdnCampaignService" android:enabled="@bool/madme_pre_o"/>
+        <service android:name="com.madme.mobile.sdk.service.CdnCampaignJobService" android:permission="android.permission.BIND_JOB_SERVICE" android:enabled="@bool/madme_o"/>
+        <service android:name="com.madme.mobile.sdk.service.CampaignHelperService" android:permission="android.permission.BIND_JOB_SERVICE"/>
+        <service android:name="com.madme.mobile.sdk.service.AdReminderHelperService"/>
+        <receiver android:name="com.madme.mobile.sdk.broadcast.AdReminderReceiver" android:exported="true">
+            <intent-filter>
+                <action android:name="net.omobio.dialogsc.madme.ACTION_AD_REMINDER"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:name="com.madme.mobile.sdk.broadcast.adtriggers.PowerConnectionAdTrigger" android:enabled="@bool/madme_pre_o">
+            <intent-filter>
+                <action android:name="android.intent.action.ACTION_POWER_CONNECTED"/>
+                <action android:name="android.intent.action.ACTION_POWER_DISCONNECTED"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:name="com.madme.mobile.sdk.broadcast.adtriggers.AirplaneModeChangedAdTrigger" android:enabled="@bool/madme_pre_o">
+            <intent-filter>
+                <action android:name="android.intent.action.AIRPLANE_MODE"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:name="com.madme.mobile.sdk.broadcast.adtriggers.WiFiAdTrigger" android:enabled="@bool/madme_pre_o">
+            <intent-filter>
+                <action android:name="android.net.wifi.STATE_CHANGE"/>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:name="com.madme.mobile.sdk.broadcast.adtriggers.WiFiAvailableTrigger" android:enabled="@bool/madme_pre_o">
+            <intent-filter>
+                <action android:name="android.net.wifi.SCAN_RESULTS"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:name="com.madme.mobile.sdk.broadcast.adtriggers.RoamingAdTrigger" android:enabled="@bool/madme_pre_o">
+            <intent-filter>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:name="com.madme.mobile.sdk.broadcast.PackageRemovalReceiver" android:enabled="@bool/madme_pre_o">
+            <intent-filter>
+                <action android:name="android.intent.action.PACKAGE_REMOVED"/>
+                <data android:scheme="package"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:name="com.madme.mobile.sdk.broadcast.MadmeSmsTrigger" android:enabled="@bool/madme_pre_o">
+            <intent-filter>
+                <action android:name="android.provider.Telephony.SMS_RECEIVED"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:name="com.madme.mobile.sdk.broadcast.UnlockReceiver" android:enabled="@bool/madme_pre_o">
+            <intent-filter>
+                <action android:name="android.intent.action.USER_PRESENT"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:name="com.madme.mobile.sdk.broadcast.EOCTrigger">
+            <intent-filter>
+                <action android:name="android.intent.action.NEW_OUTGOING_CALL"/>
+                <action android:name="android.intent.action.PHONE_STATE"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:name="com.madme.mobile.sdk.broadcast.DailyTaskReceiver">
+            <intent-filter>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE"/>
+                <action android:name="android.intent.action.PHONE_STATE"/>
+                <action android:name="android.intent.action.NEW_OUTGOING_CALL"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:name="com.madme.mobile.sdk.broadcast.BootReceiver" android:exported="true">
+            <intent-filter android:priority="@integer/madme_boot_receiver_priority">
+                <action android:name="android.intent.action.BOOT_COMPLETED"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:name="com.madme.mobile.sdk.broadcast.AdAlarmReceiver" android:exported="true">
+            <intent-filter>
+                <action android:name="net.omobio.dialogsc.madme.ACTION_AD_ALARM"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:name="com.madme.mobile.sdk.broadcast.GeofenceReceiver" android:exported="true"/>
+        <receiver android:name="com.madme.mobile.sdk.broadcast.NotificationActionReceiver" android:exported="false">
+            <intent-filter>
+                <action android:name="net.omobio.dialogsc.madme.ACTION_NOTIFICATION_CLICK"/>
+                <action android:name="net.omobio.dialogsc.madme.ACTION_NOTIFICATION_REMOVAL"/>
+                <action android:name="net.omobio.dialogsc.madme.ACTION_INTERMEDIATE_NOTIFICATION_CLICK"/>
+                <action android:name="net.omobio.dialogsc.madme.ACTION_INTERMEDIATE_NOTIFICATION_REMOVAL"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:name="com.madme.mobile.sdk.broadcast.IdSnsReceiver">
+            <intent-filter>
+                <action android:name="com.madme.idsns.U3"/>
+                <action android:name="com.madme.idsns.U4"/>
+            </intent-filter>
+        </receiver>
+        <provider android:name="com.madme.mobile.sdk.provider.MadmeFileProvider" android:exported="false" android:authorities="net.omobio.dialogsc.madme.files" android:grantUriPermissions="true">
+            <meta-data android:name="android.support.FILE_PROVIDER_PATHS" android:resource="@xml/madme_file_paths"/>
+        </provider>
+        <provider android:name="com.madme.mobile.sdk.provider.IdSnsProvider" android:exported="true" android:authorities="net.omobio.dialogsc.madme.idsns"/>
+        <service android:name="com.madme.mobile.sdk.service.cloudmessaging.CloudMessagingRegistrationService" android:permission="android.permission.BIND_JOB_SERVICE" android:exported="false"/>
+        <service android:name="com.madme.mobile.sdk.service.LSService" android:enabled="@bool/madme_pre_o" android:exported="false"/>
+        <service android:name="com.madme.mobile.sdk.service.LSJobService" android:permission="android.permission.BIND_JOB_SERVICE" android:enabled="@bool/madme_o" android:exported="false"/>
+        <service android:name="com.madme.mobile.sdk.service.LSJobService2" android:permission="android.permission.BIND_JOB_SERVICE" android:enabled="@bool/madme_o" android:exported="false"/>
+        <service android:name="com.madme.mobile.sdk.service.MFAService" android:enabled="true" android:exported="false"/>
+        <activity android:theme="@style/Theme_Smooch_NoActionBar" android:name="io.smooch.ui.NotificationActivity" android:launchMode="singleTask"/>
+        <activity android:theme="@style/Theme_Smooch" android:label="@string/Smooch_activityConversation" android:name="io.smooch.ui.ConversationActivity" android:launchMode="singleTask" android:configChanges="orientation|screenSize"/>
+        <activity android:theme="@style/Theme_AppCompat_NoActionBar_FullScreen" android:name="io.smooch.ui.widget.ImageActivity"/>
+        <receiver android:name="io.smooch.ui.notification.NotificationReceiver" android:exported="false">
+            <intent-filter>
+                <action android:name="io.smooch.NOTIFICATION"/>
+            </intent-filter>
+        </receiver>
+        <uses-library android:name="org.apache.http.legacy" android:required="false"/>
+        <service android:name="com.google.android.gms.tagmanager.TagManagerService" android:enabled="true" android:exported="false"/>
+        <activity android:name="com.google.android.gms.tagmanager.TagManagerPreviewActivity" android:exported="true" android:noHistory="true">
+            <intent-filter>
+                <data android:scheme="tagmanager.c.net.omobio.dialogsc"/>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+            </intent-filter>
+        </activity>
+        <provider android:name="io.invertase.firebase.crashlytics.ReactNativeFirebaseCrashlyticsInitProvider" android:exported="false" android:authorities="net.omobio.dialogsc.reactnativefirebasecrashlyticsinitprovider" android:initOrder="98"/>
+        <service android:name="io.invertase.firebase.messaging.ReactNativeFirebaseMessagingHeadlessService"/>
+        <service android:name="io.invertase.firebase.messaging.ReactNativeFirebaseMessagingService" android:exported="false">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT"/>
+            </intent-filter>
+        </service>
+        <receiver android:name="io.invertase.firebase.messaging.ReactNativeFirebaseMessagingReceiver" android:permission="com.google.android.c2dm.permission.SEND" android:exported="true">
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.RECEIVE"/>
+            </intent-filter>
+        </receiver>
+        <meta-data android:name="firebase_messaging_auto_init_enabled" android:value="true"/>
+        <meta-data android:name="com.google.firebase.messaging.default_notification_channel_id" android:value=""/>
+        <meta-data android:name="com.google.firebase.messaging.default_notification_color" android:resource="@color/white"/>
+        <activity android:theme="@style/Theme.Translucent.NoTitleBar" android:name="com.google.android.gms.auth.api.signin.internal.SignInHubActivity" android:exported="false" android:excludeFromRecents="true"/>
+        <service android:name="com.google.android.gms.auth.api.signin.RevocationBoundService" android:permission="com.google.android.gms.auth.api.signin.permission.REVOCATION_NOTIFICATION" android:exported="true" android:visibleToInstantApps="true"/>
+        <provider android:name="com.google.firebase.perf.provider.FirebasePerfProvider" android:exported="false" android:authorities="net.omobio.dialogsc.firebaseperfprovider" android:initOrder="101"/>
+        <service android:name="com.google.firebase.components.ComponentDiscoveryService" android:exported="false" android:directBootAware="true">
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.perf.FirebasePerfRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.dynamiclinks.internal.FirebaseDynamicLinkRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.auth.FirebaseAuthRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.firestore.FirestoreRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.messaging.FirebaseMessagingRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.crashlytics.ndk.CrashlyticsNdkRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.crashlytics.CrashlyticsRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.iid.Registrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.datatransport.TransportRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.remoteconfig.RemoteConfigRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.analytics.connector.internal.AnalyticsConnectorRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.installations.FirebaseInstallationsRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.abt.component.AbtRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.dynamicloading.DynamicLoadingRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+        </service>
+        <activity android:theme="@style/Theme.AppInvite.Preview" android:name="com.google.android.gms.appinvite.PreviewActivity" android:exported="true">
+            <intent-filter>
+                <action android:name="com.google.android.gms.appinvite.ACTION_PREVIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:theme="@style/Theme.Translucent.NoTitleBar" android:name="com.google.firebase.auth.internal.FederatedSignInActivity" android:permission="com.google.firebase.auth.api.gms.permission.LAUNCH_FEDERATED_SIGN_IN" android:exported="true" android:excludeFromRecents="true" android:launchMode="singleTask"/>
+        <activity android:theme="@style/Theme.Translucent.NoTitleBar" android:name="com.google.android.gms.common.api.GoogleApiActivity" android:exported="false"/>
+        <service android:name="io.smooch.core.service.SmoochService" android:exported="false"/>
+        <service android:name="io.smooch.core.FcmService">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT"/>
+            </intent-filter>
+        </service>
+        <receiver android:name="com.google.firebase.iid.FirebaseInstanceIdReceiver" android:permission="com.google.android.c2dm.permission.SEND" android:exported="true">
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.RECEIVE"/>
+            </intent-filter>
+        </receiver>
+        <service android:name="com.google.firebase.messaging.FirebaseMessagingService" android:exported="false" android:directBootAware="true">
+            <intent-filter android:priority="-500">
+                <action android:name="com.google.firebase.MESSAGING_EVENT"/>
+            </intent-filter>
+        </service>
+        <activity android:theme="@d/DeviceCredentialHandlerTheme" android:name="androidx.biometric.DeviceCredentialHandlerActivity" android:exported="true"/>
+        <activity android:theme="@style/com_facebook_activity_theme" android:name="com.facebook.FacebookActivity" android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|screenSize"/>
+        <activity android:name="com.facebook.CustomTabMainActivity"/>
+        <activity android:name="com.facebook.CustomTabActivity" android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:scheme="fbconnect" android:host="cct.net.omobio.dialogsc"/>
+            </intent-filter>
+        </activity>
+        <service android:name="lk.dialog.cemstatslibrary.CEMService" android:enabled="true" android:exported="true"/>
+        <receiver android:label="StartMyServiceAtBootReceiver" android:name="lk.dialog.cemstatslibrary.StartCEMServiceReceiver" android:enabled="true" android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED"/>
+                <action android:name="android.intent.action.DATE_CHANGED"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <action android:name="android.intent.action.PHONE_STATE"/>
+            </intent-filter>
+        </receiver>
+        <provider android:name="com.facebook.internal.FacebookInitProvider" android:exported="false" android:authorities="net.omobio.dialogsc.FacebookInitProvider"/>
+        <receiver android:name="com.facebook.CurrentAccessTokenExpirationBroadcastReceiver" android:exported="false">
+            <intent-filter>
+                <action android:name="com.facebook.sdk.ACTION_CURRENT_ACCESS_TOKEN_CHANGED"/>
+            </intent-filter>
+        </receiver>
+        <meta-data android:name="com.bumptech.glide.integration.okhttp3.OkHttpGlideModule" android:value="GlideModule"/>
+        <provider android:name="com.google.firebase.provider.FirebaseInitProvider" android:exported="false" android:authorities="net.omobio.dialogsc.firebaseinitprovider" android:initOrder="100" android:directBootAware="true"/>
+        <activity android:theme="@style/Theme.Translucent" android:name="com.google.android.gms.ads.AdActivity" android:exported="false" android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize"/>
+        <provider android:name="com.google.android.gms.ads.MobileAdsInitProvider" android:exported="false" android:authorities="net.omobio.dialogsc.mobileadsinitprovider" android:initOrder="100"/>
+        <receiver android:name="com.google.android.gms.measurement.AppMeasurementReceiver" android:enabled="true" android:exported="false"/>
+        <service android:name="com.google.android.gms.measurement.AppMeasurementService" android:enabled="true" android:exported="false"/>
+        <service android:name="com.google.android.gms.measurement.AppMeasurementJobService" android:permission="android.permission.BIND_JOB_SERVICE" android:enabled="true" android:exported="false"/>
+        <service android:name="com.google.android.datatransport.runtime.backends.TransportBackendDiscovery" android:exported="false">
+            <meta-data android:name="backend:com.google.android.datatransport.cct.CctBackendFactory" android:value="cct"/>
+        </service>
+        <service android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.JobInfoSchedulerService" android:permission="android.permission.BIND_JOB_SERVICE" android:exported="false"/>
+        <receiver android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.AlarmManagerSchedulerBroadcastReceiver" android:exported="false"/>
+        <activity android:name="com.google.android.play.core.missingsplits.PlayCoreMissingSplitsActivity" android:enabled="false" android:exported="false" android:process=":playcore_missing_splits_activity" android:stateNotNeeded="true" android:launchMode="singleInstance"/>
+        <activity android:theme="@style/Theme.PlayCore.Transparent" android:name="com.google.android.play.core.common.PlayCoreDialogWrapperActivity" android:enabled="false" android:exported="false" android:stateNotNeeded="true"/>
+        <service android:name="com.google.android.play.core.assetpacks.AssetPackExtractionService" android:enabled="false" android:exported="true"/>
+    </application>
+</manifest>

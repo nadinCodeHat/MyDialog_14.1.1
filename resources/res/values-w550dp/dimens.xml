@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="Smooch_fileNameMaxWidth">261dp</dimen>
+    <dimen name="Smooch_imageDisplayHeight">182dp</dimen>
+    <dimen name="Smooch_imageDisplayWidth">348dp</dimen>
+    <dimen name="Smooch_messageMaxSize">324dp</dimen>
+</resources>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:background="@drawable/madme_carousel_item_bg_with_stroke" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:layout_gravity="center" android:orientation="horizontal" android:padding="@dimen/madme_standard_padding" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1">
+        <LinearLayout android:gravity="top|center_vertical|center_horizontal|center" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1">
+            <ImageView android:id="@+id/madme_carousel_image" android:layout_width="match_parent" android:layout_height="match_parent" android:scaleType="fitCenter"/>
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:padding="@dimen/madme_standard_padding_half" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <androidx.appcompat.widget.AppCompatCheckBox android:layout_gravity="center" android:id="@+id/madme_favourite_button" android:focusable="false" android:focusableInTouchMode="false" android:layout_width="@dimen/madme_carousel_child_icon_size" android:layout_height="@dimen/madme_carousel_child_icon_size" android:button="@drawable/madme_favorite_button_color" android:textOn="" android:textOff=""/>
+            <Button android:gravity="center_vertical" android:id="@+id/madme_action_button" android:focusable="false" android:focusableInTouchMode="false" android:layout_width="@dimen/madme_carousel_child_icon_size" android:layout_height="@dimen/madme_carousel_child_icon_size" android:textOn="" android:textOff=""/>
+        </LinearLayout>
+    </LinearLayout>
+    <TextView android:textSize="14dp" android:textColor="@color/madme_secondary_color" android:gravity="top|center_vertical|center_horizontal|center" android:id="@+id/madme_label" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/madme_standard_margin" android:text="Title" android:lines="1" android:singleLine="true"/>
+</LinearLayout>

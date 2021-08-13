@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="match_parent" android:layout_height="match_parent">
+    <FrameLayout android:id="@+id/madme_browser_header" android:background="@color/madme_browser_header_color" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentTop="true">
+        <androidx.appcompat.widget.AppCompatImageButton android:layout_gravity="right" android:id="@+id/madme_cancel_ad" android:background="@android:color/transparent" android:layout_width="@dimen/madme_dismiss_icon_size" android:layout_height="@dimen/madme_dismiss_icon_size" android:layout_marginTop="1dp" android:layout_marginRight="5dp" android:layout_marginBottom="1dp" android:scaleType="fitXY" app:srcCompat="@drawable/madme_btn_cancel"/>
+    </FrameLayout>
+    <FrameLayout android:layout_width="match_parent" android:layout_height="match_parent" android:layout_below="@+id/madme_browser_header">
+        <WebView android:id="@+id/madme_web_view" android:layout_width="match_parent" android:layout_height="match_parent"/>
+        <ProgressBar android:layout_gravity="center" android:id="@+id/madme_browser_progress_bar" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+    </FrameLayout>
+</RelativeLayout>

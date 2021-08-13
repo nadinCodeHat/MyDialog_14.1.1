@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:gravity="center_vertical" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <androidx.viewpager.widget.ViewPager android:id="@+id/madme_ads_carousel" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+    <TextView android:id="@+id/madme_empty_list_view_hint" android:padding="@dimen/madme_standard_margin_double" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/madme_empty_offers_history_hint"/>
+</LinearLayout>

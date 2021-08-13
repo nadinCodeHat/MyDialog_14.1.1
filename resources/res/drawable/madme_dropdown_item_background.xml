@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:shape="rectangle" android:left="-1dp" android:top="0dp" android:right="-1dp" android:bottom="0dp">
+    <padding android:left="@dimen/madme_standard_padding" android:top="@dimen/madme_standard_padding" android:right="@dimen/madme_standard_padding" android:bottom="@dimen/madme_standard_padding"/>
+    <solid android:color="@color/madme_dropdown_item_background"/>
+    <stroke android:width="0.5dp" android:color="@color/madme_dropdown_item_seperator"/>
+</shape>

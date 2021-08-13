@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="Smooch_settings_showMenuOptions">
+        <item>@string/Smooch_settings_takePhotoMenuKey</item>
+        <item>@string/Smooch_settings_chooseMediaMenuKey</item>
+        <item>@string/Smooch_settings_uploadFileMenuKey</item>
+        <item>@string/Smooch_settings_shareLocationMenuKey</item>
+    </array>
+    <array name="crypto_fingerprint_fallback_prefixes">
+        <item>SM-G95</item>
+        <item>SM-G96</item>
+        <item>SM-G97</item>
+        <item>SM-N95</item>
+        <item>SM-N96</item>
+        <item>SM-N97</item>
+        <item>SM-A20</item>
+    </array>
+    <array name="crypto_fingerprint_fallback_vendors">
+        <item>samsung</item>
+    </array>
+    <array name="hide_fingerprint_instantly_prefixes">
+        <item>SM-G97</item>
+        <item>SC-03L</item>
+        <item>SC-04L</item>
+        <item>SC-05L</item>
+        <item>SCV41</item>
+        <item>SCV42</item>
+        <item>SM-N97</item>
+        <item>SC-01M</item>
+        <item>SCV45</item>
+    </array>
+    <array name="madme_no_ads_numbers">
+        <item>911</item>
+        <item>112</item>
+    </array>
+</resources>

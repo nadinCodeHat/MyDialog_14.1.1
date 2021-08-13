@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="madme_no_ads_numbers">
+        <item>911</item>
+        <item>112</item>
+    </array>
+</resources>

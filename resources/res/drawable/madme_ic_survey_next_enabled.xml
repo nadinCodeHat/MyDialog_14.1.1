@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:height="@dimen/madme_survey_nav_button_icon_size" android:width="@dimen/madme_survey_nav_button_icon_size" android:viewportWidth="24" android:viewportHeight="24">
+    <path android:fillColor="@color/madme_survey_next_button_enabled_icon_color" android:pathData="M10,6L8.59,7.41 13.17,12l-4.58,4.59L10,18l6,-6z"/>
+</vector>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="horizontal" android:padding="@dimen/Smooch_btnActionPaddingHorizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+    <View android:id="@+id/smooch_typing_indicator_1" android:background="@drawable/smooch_drawable_circle" android:layout_width="@dimen/Smooch_typingIndicatorSize" android:layout_height="@dimen/Smooch_typingIndicatorSize" android:layout_marginRight="@dimen/Smooch_typingIndicatorSeparatorPadding"/>
+    <View android:id="@+id/smooch_typing_indicator_2" android:background="@drawable/smooch_drawable_circle" android:layout_width="@dimen/Smooch_typingIndicatorSize" android:layout_height="@dimen/Smooch_typingIndicatorSize" android:layout_marginRight="@dimen/Smooch_typingIndicatorSeparatorPadding"/>
+    <View android:id="@+id/smooch_typing_indicator_3" android:background="@drawable/smooch_drawable_circle" android:layout_width="@dimen/Smooch_typingIndicatorSize" android:layout_height="@dimen/Smooch_typingIndicatorSize"/>
+</LinearLayout>

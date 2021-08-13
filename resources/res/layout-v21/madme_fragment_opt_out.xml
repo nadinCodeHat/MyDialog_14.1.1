@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="wrap_content" android:layout_height="wrap_content">
+    <CheckBox android:textColor="@color/madme_checkbox_text" android:id="@+id/madme_opt_out_checkbox" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/madme_settings_opt_out" android:layout_centerVertical="true" android:buttonTint="@color/madme_checkbox_tint"/>
+    <TextView android:textColor="@color/madme_checkbox_text" android:id="@+id/madme_opt_out_textview" android:padding="@dimen/madme_standard_padding_half" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="@dimen/madme_standard_margin" android:text="@string/madme_opt_out_textview" android:layout_centerVertical="true"/>
+</LinearLayout>

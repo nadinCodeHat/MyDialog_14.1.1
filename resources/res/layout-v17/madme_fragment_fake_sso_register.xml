@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:gravity="center_vertical" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <ScrollView android:layout_width="match_parent" android:layout_height="match_parent">
+        <LinearLayout android:orientation="vertical" style="@style/MadmeLoginFormContainer">
+            <EditText android:id="@+id/madme_msisdn" android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="@string/madme_prompt_login" android:maxLines="1" android:singleLine="true" android:digits="0123456789" android:inputType="phone" style="@style/MadmeCustomEditText"/>
+            <EditText android:enabled="false" android:id="@+id/madme_sso_token" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="5dp" android:hint="@string/madme_prompt_sso_token" android:maxLines="1" android:singleLine="true" android:inputType="text" android:imeOptions="actionUnspecified" android:imeActionLabel="@string/madme_action_sign_in_short" android:imeActionId="@+id/madme_sso_token" style="@style/MadmeCustomEditText"/>
+            <Button android:layout_gravity="right" android:id="@+id/madme_sign_in_button" android:paddingLeft="32dp" android:paddingRight="32dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="16dp" android:text="@string/madme_action_sign_in_register" android:paddingStart="32dp" android:paddingEnd="32dp" style="@style/MadmeCustomRegisterButton"/>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

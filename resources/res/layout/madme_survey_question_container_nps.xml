@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <RelativeLayout android:id="@+id/madme_survey_q_c_label_parent" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="8dp">
+        <include android:id="@android:id/text1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentLeft="true" layout="@layout/madme_survey_question_item_slider_label"/>
+        <LinearLayout android:orientation="horizontal" android:id="@+id/madme_survey_q_c_labels" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+        <include android:id="@android:id/text2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" layout="@layout/madme_survey_question_item_slider_label"/>
+    </RelativeLayout>
+    <RadioGroup android:orientation="horizontal" android:id="@+id/madme_survey_q_c_radiogroup" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+    <TextView android:textSize="@dimen/madme_survey_nps_label_text_size" android:textColor="@color/madme_survey_nps_label_text_color" android:gravity="center" android:id="@+id/madme_slider_label" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/madme_standard_margin"/>
+</LinearLayout>

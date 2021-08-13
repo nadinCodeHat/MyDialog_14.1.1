@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt">
+    <item android:state_focused="true">
+        <shape android:shape="rectangle">
+            <stroke android:width="@dimen/madme_survey_edittext_outline_focused_width" android:color="@color/madme_survey_edittext_outline_color"/>
+            <corners android:radius="@dimen/madme_survey_edittext_outline_corner_radius"/>
+            <solid android:color="@color/madme_survey_edittext_background_color"/>
+            <padding android:left="@dimen/madme_survey_edittext_focused_padding" android:top="@dimen/madme_survey_edittext_focused_padding" android:right="@dimen/madme_survey_edittext_focused_padding" android:bottom="@dimen/madme_survey_edittext_focused_padding"/>
+        </shape>
+    </item>
+    <item>
+        <shape android:shape="rectangle">
+            <stroke android:width="@dimen/madme_survey_edittext_outline_width" android:color="@color/madme_survey_edittext_outline_color"/>
+            <corners android:radius="@dimen/madme_survey_edittext_outline_corner_radius"/>
+            <solid android:color="@color/madme_survey_edittext_background_color"/>
+            <padding android:left="@dimen/madme_survey_edittext_padding" android:top="@dimen/madme_survey_edittext_padding" android:right="@dimen/madme_survey_edittext_padding" android:bottom="@dimen/madme_survey_edittext_padding"/>
+        </shape>
+    </item>
+</selector>

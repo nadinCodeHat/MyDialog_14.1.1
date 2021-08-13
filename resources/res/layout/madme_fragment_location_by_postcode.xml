@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:id="@+id/madme_dymamic_conatainer" android:layout_width="match_parent" android:layout_height="wrap_content" style="@style/MadmeContentContainer">
+    <LinearLayout android:orientation="vertical" android:focusable="true" android:focusableInTouchMode="true" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <TextView android:id="@+id/madme_enter_postcode_label" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/madme_feature_registration_select_postcode_label"/>
+        <EditText android:id="@+id/madme_enter_postcode" android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="@string/madme_feature_registration_select_postcode_prompt" android:maxLines="1" android:singleLine="true" style="@style/MadmeCustomEditText"/>
+    </LinearLayout>
+</LinearLayout>

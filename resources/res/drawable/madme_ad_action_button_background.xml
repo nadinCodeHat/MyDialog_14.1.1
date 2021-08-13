@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt">
+    <solid android:color="@color/madme_ad_action_button_background_color"/>
+    <stroke android:width="2dp" android:color="@color/madme_ad_action_button_outline_color"/>
+    <corners android:radius="5dp"/>
+    <padding android:left="5dp" android:top="5dp" android:right="5dp" android:bottom="5dp"/>
+</shape>

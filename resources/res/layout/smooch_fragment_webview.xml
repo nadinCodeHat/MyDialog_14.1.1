@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:clickable="true" android:layout_width="match_parent" android:layout_height="match_parent">
+    <FrameLayout android:id="@+id/fader" android:background="#333333" android:layout_width="match_parent" android:layout_height="match_parent" android:alpha="0.7"/>
+    <LinearLayout android:orientation="vertical" android:id="@+id/webviewContainer" android:layout_width="match_parent" android:layout_height="match_parent">
+        <androidx.appcompat.widget.Toolbar android:id="@+id/webviewToolbar" android:background="@drawable/background_webview_toolbar" android:clickable="true" android:layout_width="match_parent" android:layout_height="?attr/actionBarSize"/>
+        <FrameLayout android:layout_width="match_parent" android:layout_height="match_parent">
+            <WebView android:id="@+id/webview" android:layout_width="match_parent" android:layout_height="match_parent"/>
+            <FrameLayout android:id="@+id/webviewProgress" android:layout_width="match_parent" android:layout_height="2dp">
+                <FrameLayout android:layout_gravity="center_vertical" android:layout_width="match_parent" android:layout_height="10dp">
+                    <ProgressBar android:layout_width="match_parent" android:layout_height="match_parent" android:indeterminate="true" style="?android:attr/progressBarStyleHorizontal"/>
+                </FrameLayout>
+            </FrameLayout>
+        </FrameLayout>
+    </LinearLayout>
+</FrameLayout>

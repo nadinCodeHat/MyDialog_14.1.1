@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CheckBox xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:theme="@style/MadmeSurveyCheckbox" android:textSize="@dimen/madme_survey_question_checkbox_font_size" android:textColor="@color/madme_survey_question_text_color" android:gravity="start" android:layout_gravity="start" android:id="@+id/madme_survey_checkbox" android:layout_width="0dp" android:layout_height="wrap_content"/>

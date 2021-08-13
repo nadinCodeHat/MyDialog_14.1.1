@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="horizontal" android:padding="@dimen/madme_standard_padding_double" android:layout_width="match_parent" android:layout_height="match_parent">
+    <TextView android:id="@+id/madme_debug_offer_text" android:paddingLeft="36dp" android:layout_width="0dp" android:layout_height="wrap_content" android:maxLines="1" android:layout_weight="3" android:paddingStart="36dp"/>
+    <TextView android:gravity="end" android:id="@+id/madme_debug_campaign_id" android:layout_width="0dp" android:layout_height="wrap_content" android:maxLines="1" android:layout_weight="1"/>
+</LinearLayout>

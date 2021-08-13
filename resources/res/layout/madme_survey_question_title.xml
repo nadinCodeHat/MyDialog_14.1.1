@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:gravity="right|center_vertical|center_horizontal|center|clip_horizontal" android:orientation="horizontal" android:id="@+id/madme_survey_question_title_container" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="20dp">
+    <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <TextView android:textAppearance="@style/TextAppearance.Medium" android:textSize="@dimen/madme_survey_question_title_font_size" android:textColor="@color/madme_survey_question_title_color" android:id="@android:id/text2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentTop="true"/>
+    </RelativeLayout>
+</LinearLayout>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:paddingTop="@dimen/madme_standard_padding" android:paddingBottom="@dimen/madme_standard_padding" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <TextView android:id="@+id/madme_debug_trigger_type" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+    <TextView android:id="@+id/madme_debug_destination_numbers" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+    <TextView android:id="@+id/madme_debug_phone_number_match" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+    <TextView android:id="@+id/madme_debug_call_direction" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+    <TextView android:id="@+id/madme_debug_wifi_ssid_match" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+    <TextView android:id="@+id/madme_debug_network_name_match" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+    <TextView android:id="@+id/madme_debug_network_code_match" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+    <TextView android:id="@+id/madme_debug_package_name" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+    <TextView android:id="@+id/madme_debug_min_call_duration" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+    <TextView android:id="@+id/madme_debug_sms_short_code_match" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+    <TextView android:id="@+id/madme_debug_sms_keyword" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+    <TextView android:id="@+id/madme_debug_roaming_status" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+    <TextView android:id="@+id/madme_debug_host_app_inactive_days" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+    <TextView android:id="@+id/madme_debug_country_code" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+    <TextView android:id="@+id/madme_debug_sms_activation_text" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+    <TextView android:id="@+id/madme_debug_sms_activation_number" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+    <TextView android:id="@+id/madme_debug_sms_activation" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+    <Button android:textSize="12dp" android:id="@+id/madme_debug_button_geofence" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="DISPLAY GEOFENCE" android:layout_alignParentBottom="true"/>
+</LinearLayout>

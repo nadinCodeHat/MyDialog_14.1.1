@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<network-security-config xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt">
+    <domain-config cleartextTrafficPermitted="true">
+        <domain includeSubdomains="false">localhost
+        </domain>
+        <domain includeSubdomains="false">10.0.2.2
+        </domain>
+        <domain includeSubdomains="false">10.0.3.2
+        </domain>
+        <domain includeSubdomains="false">selfcare.dialog.lk
+        </domain>
+        <domain includeSubdomains="false">selfcaretest.dialog.lk
+        </domain>
+        <domain includeSubdomains="false">qoe.dialog.lk
+        </domain>
+        <domain includeSubdomains="false">mwc.dialog.lk
+        </domain>
+    </domain-config>
+</network-security-config>

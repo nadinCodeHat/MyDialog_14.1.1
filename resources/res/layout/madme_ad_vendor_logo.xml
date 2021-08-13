@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+    <androidx.appcompat.widget.AppCompatImageView android:id="@+id/madme_ad_icon" android:layout_width="50dp" android:layout_height="50dp" android:scaleType="fitCenter" android:layout_alignParentLeft="true" android:layout_centerVertical="true" app:srcCompat="@drawable/madme_ic_vendor_logo"/>
+</RelativeLayout>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:gravity="center_vertical" android:layout_gravity="left|center_vertical|center_horizontal|center|clip_horizontal" android:orientation="horizontal" android:id="@+id/madme_survey_header_alignable" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:layout_marginRight="10dp">
+        <ImageView android:id="@+id/madme_survey_act_logo" android:layout_width="64dp" android:layout_height="64dp" android:scaleType="fitCenter"/>
+        <TextView android:textAppearance="@style/MadmeSurveyActionBarTitle" android:id="@+id/madme_survey_act_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5dp" android:layout_marginRight="5dp"/>
+        <Space android:layout_width="0dp" android:layout_height="0dp" android:layout_weight="1"/>
+        <androidx.appcompat.widget.AppCompatImageButton android:gravity="right" android:id="@+id/madme_cancel_survey" android:background="@android:color/transparent" android:padding="2dp" android:layout_width="wrap_content" android:layout_height="wrap_content" app:srcCompat="@drawable/madme_btn_cancel"/>
+    </LinearLayout>
+</FrameLayout>

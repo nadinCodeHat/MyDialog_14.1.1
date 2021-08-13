@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:gravity="center_vertical" android:orientation="vertical" android:padding="@dimen/madme_standard_padding" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="vertical" android:padding="@dimen/madme_standard_padding" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1">
+        <ListView android:id="@+id/madme_list_view" android:background="@android:color/transparent" android:layout_width="match_parent" android:layout_height="wrap_content" android:divider="@android:color/transparent" android:dividerHeight="4dp"/>
+        <TextView android:id="@+id/madme_empty_list_view_hint" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/madme_empty_offers_history_hint"/>
+    </LinearLayout>
+    <Button android:id="@+id/madme_get_ads" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/madme_standard_margin" android:text="@string/madme_offers_get_ads" style="@style/MadmeCustomSaveButton"/>
+</LinearLayout>

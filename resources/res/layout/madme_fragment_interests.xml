@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="match_parent" style="@style/MadmeContentContainer">
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@+id/madme_interests_bar" android:background="@color/madme_profile_bar_background_color" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <TextView android:layout_width="0dp" android:layout_height="wrap_content" android:text="@string/madme_change_profile_interests_header" android:layout_weight="5" style="@style/MadmeProfileTitle"/>
+            <ImageView android:id="@+id/madme_icon_chevron" android:layout_width="0dp" android:layout_height="wrap_content" android:scaleType="fitCenter" android:layout_weight="1" app:srcCompat="@drawable/madme_ic_expand_more_white"/>
+        </LinearLayout>
+        <com.madme.mobile.sdk.views.ExpandableLinearLayout android:orientation="vertical" android:id="@+id/madme_expandableLayout" android:background="@color/madme_profile_bar_content_color" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_below="@+id/madme_interests_bar" app:madme_ael_duration="500" app:madme_ael_expanded="true">
+            <LinearLayout android:orientation="vertical" android:id="@+id/madme_fragment_interests_container" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+        </com.madme.mobile.sdk.views.ExpandableLinearLayout>
+    </RelativeLayout>
+</LinearLayout>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt">
+    <item android:state_focused="false" android:state_pressed="true">
+        <shape>
+            <solid android:color="@color/Smooch_accentDark"/>
+            <corners android:radius="@dimen/Smooch_btnActionRadius"/>
+        </shape>
+    </item>
+    <item android:state_focused="true" android:state_pressed="true">
+        <shape>
+            <solid android:color="@color/Smooch_accentDark"/>
+            <corners android:radius="@dimen/Smooch_btnActionRadius"/>
+        </shape>
+    </item>
+    <item>
+        <shape>
+            <solid android:color="@color/Smooch_accent"/>
+            <corners android:radius="@dimen/Smooch_btnActionRadius"/>
+        </shape>
+    </item>
+</selector>

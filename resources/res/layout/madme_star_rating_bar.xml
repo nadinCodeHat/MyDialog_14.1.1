@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt">
+    <LinearLayout android:gravity="center" android:id="@+id/madme_stars_container" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <ToggleButton android:id="@+id/madme_ratingbutton_0" android:focusable="false" android:focusableInTouchMode="false" android:layout_width="@dimen/madme_rating_star_size" android:layout_height="@dimen/madme_rating_star_size" android:layout_margin="@dimen/madme_standard_margin_half" android:textOn="" android:textOff=""/>
+        <ToggleButton android:id="@+id/madme_ratingbutton_1" android:focusable="false" android:focusableInTouchMode="false" android:layout_width="@dimen/madme_rating_star_size" android:layout_height="@dimen/madme_rating_star_size" android:layout_margin="@dimen/madme_standard_margin_half" android:textOn="" android:textOff=""/>
+        <ToggleButton android:id="@+id/madme_ratingbutton_2" android:focusable="false" android:focusableInTouchMode="false" android:layout_width="@dimen/madme_rating_star_size" android:layout_height="@dimen/madme_rating_star_size" android:layout_margin="@dimen/madme_standard_margin_half" android:textOn="" android:textOff=""/>
+        <ToggleButton android:id="@+id/madme_ratingbutton_3" android:focusable="false" android:focusableInTouchMode="false" android:layout_width="@dimen/madme_rating_star_size" android:layout_height="@dimen/madme_rating_star_size" android:layout_margin="@dimen/madme_standard_margin_half" android:textOn="" android:textOff=""/>
+        <ToggleButton android:id="@+id/madme_ratingbutton_4" android:focusable="false" android:focusableInTouchMode="false" android:layout_width="@dimen/madme_rating_star_size" android:layout_height="@dimen/madme_rating_star_size" android:layout_margin="@dimen/madme_standard_margin_half" android:textOn="" android:textOff=""/>
+    </LinearLayout>
+    <TextView android:textSize="@dimen/madme_survey_rating_label_text_size" android:textColor="@color/madme_survey_rating_label_text_color" android:gravity="center" android:id="@+id/madme_rating_label" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+</merge>

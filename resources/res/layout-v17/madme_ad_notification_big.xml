@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:id="@+id/madme_status_bar_latest_event_content" android:layout_width="match_parent" android:layout_height="256dp">
+    <ImageView android:id="@+id/madme_n_icon" android:layout_width="@dimen/notification_large_icon_width" android:layout_height="@dimen/notification_large_icon_height" android:scaleType="fitCenter"/>
+    <include android:layout_gravity="fill_vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/notification_large_icon_width" android:layout_marginStart="@dimen/notification_large_icon_width" layout="@layout/madme_ad_notification_lines"/>
+    <ImageView android:layout_gravity="bottom" android:id="@+id/madme_big_picture" android:layout_width="match_parent" android:layout_height="192dp" android:layout_marginTop="64dp" android:scaleType="centerCrop"/>
+</RelativeLayout>

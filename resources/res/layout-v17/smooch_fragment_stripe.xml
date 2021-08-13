@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_gravity="bottom" android:orientation="vertical" android:background="#ffffff" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_alignParentBottom="true">
+    <ScrollView android:layout_width="match_parent" android:layout_height="match_parent">
+        <LinearLayout android:gravity="center_horizontal" android:layout_gravity="center_horizontal" android:orientation="vertical" android:background="#ffffff" android:clickable="true" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginTop="20dp">
+            <TextView android:textSize="80sp" android:textColor="@color/Smooch_inputTextColor" android:ellipsize="end" android:id="@+id/dollarAmount" android:background="@color/Smooch_inputTextBackground" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" android:fontFamily="sans-serif-light"/>
+            <io.smooch.com.devmarvel.creditcardentry.library.CreditCardForm android:id="@+id/creditCardForm" android:padding="15dp" android:layout_width="313dp" android:layout_height="wrap_content" app:card_number_hint="1234 5678 1234 5678" app:hint_text_color="#eeeeee" app:include_zip="false" app:input_background="@drawable/credit_background"/>
+            <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@+id/savedCreditCardForm" android:padding="15dp" android:visibility="gone" android:layout_width="313dp" android:layout_height="wrap_content">
+                <LinearLayout android:orientation="horizontal" android:id="@+id/savedFormLayout" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="10dp">
+                    <ImageView android:id="@+id/savedFormImage" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="2.5dp"/>
+                    <TextView android:textSize="19sp" android:textColor="#000000" android:id="@+id/savedFormText" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5dp" android:layout_marginTop="5dp"/>
+                </LinearLayout>
+                <Button android:textSize="15sp" android:textColor="@color/Smooch_accent" android:gravity="center" android:id="@+id/changeCardButton" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/Smooch_btnChangeCard" android:textAllCaps="false" style="?android:attr/borderlessButtonStyle"/>
+            </LinearLayout>
+            <TextView android:textSize="15sp" android:textColor="@color/Smooch_header" android:gravity="center" android:id="@+id/creditMessage" android:layout_width="280dp" android:layout_height="wrap_content" android:layout_marginTop="5dp" android:layout_marginBottom="40dp" android:lineSpacingExtra="3dp"/>
+            <TextView android:textColor="@color/Smooch_header" android:gravity="center" android:id="@+id/savedCreditMessage" android:layout_width="280dp" android:layout_height="wrap_content" android:layout_marginTop="5dp" android:layout_marginBottom="40dp" android:lineSpacingExtra="3dp"/>
+            <TextView android:textColor="@color/text_failure_color" android:gravity="center" android:id="@+id/errorMessage" android:visibility="gone" android:layout_width="280dp" android:layout_height="wrap_content" android:layout_marginTop="5dp" android:layout_marginBottom="40dp" android:text="@string/Smooch_creditErrorMessage" android:lineSpacingExtra="3dp"/>
+        </LinearLayout>
+    </ScrollView>
+    <Button android:id="@+id/closeButton" android:padding="15dp" android:layout_width="25dp" android:layout_height="25dp" android:layout_margin="15dp" android:layout_alignParentLeft="true" android:layout_alignParentTop="true" android:layout_alignParentStart="true"/>
+    <ProgressBar android:id="@+id/loadingSpinner" android:visibility="gone" android:layout_width="80dp" android:layout_height="80dp" android:layout_centerHorizontal="true" android:layout_centerVertical="true"/>
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+        <Button android:textSize="15sp" android:textColor="@color/Smooch_userMessageText" android:id="@+id/creditCardBuy" android:background="@drawable/background_white" android:padding="20dp" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:minWidth="0dp" android:minHeight="0dp" android:text="@string/Smooch_btnPayNow" android:textAllCaps="false"/>
+        <ProgressBar android:id="@+id/payNowSpinner" android:visibility="gone" android:layout_width="40dp" android:layout_height="40dp" android:layout_centerHorizontal="true" android:layout_centerVertical="true"/>
+    </RelativeLayout>
+</RelativeLayout>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:paddingTop="2dp" android:paddingRight="8dp" android:paddingBottom="2dp" android:layout_width="wrap_content" android:layout_height="wrap_content">
+    <LinearLayout android:orientation="horizontal" android:id="@+id/madme_n_line1" android:paddingTop="1dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="8dp">
+        <TextView android:textAppearance="@style/TextAppearance.StatusBar.EventContent.Title" android:ellipsize="marquee" android:id="@+id/madme_n_title" android:fadingEdge="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:maxLines="1" android:layout_weight="1"/>
+    </LinearLayout>
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@+id/madme_n_line3" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="8dp">
+        <TextView android:textAppearance="@style/TextAppearance.StatusBar.EventContent" android:ellipsize="marquee" android:layout_gravity="center" android:id="@+id/madme_n_text" android:fadingEdge="horizontal" android:layout_width="0dp" android:layout_height="wrap_content" android:maxLines="2" android:layout_weight="1"/>
+    </LinearLayout>
+</LinearLayout>

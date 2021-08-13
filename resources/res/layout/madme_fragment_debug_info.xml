@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="match_parent" android:layout_height="match_parent">
+    <ScrollView android:layout_width="match_parent" android:layout_height="match_parent">
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+            <TextView android:textSize="16dp" android:textStyle="bold" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="@dimen/madme_standard_margin" android:text="@string/madme_debug_sdk_status"/>
+            <TextView android:id="@+id/madme_account_status" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="@dimen/madme_standard_margin"/>
+            <TextView android:id="@+id/madme_is_opt_out" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="@dimen/madme_standard_margin"/>
+            <TextView android:id="@+id/madme_subscriber_id_debug" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="@dimen/madme_standard_margin"/>
+            <TextView android:id="@+id/madme_subscriber_uuid_debug" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="@dimen/madme_standard_margin"/>
+            <TextView android:id="@+id/madme_app_uuid_debug" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="@dimen/madme_standard_margin"/>
+            <TextView android:id="@+id/madme_end_point" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="@dimen/madme_standard_margin"/>
+            <TextView android:textSize="16dp" android:textStyle="bold" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="@dimen/madme_standard_margin" android:text="@string/madme_debug_ads_info_title"/>
+            <TextView android:id="@+id/madme_count_ads" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="@dimen/madme_standard_margin"/>
+            <TextView android:id="@+id/madme_count_deferred_ads" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="@dimen/madme_standard_margin"/>
+            <TextView android:id="@+id/madme_deferred_ads_ids" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="@dimen/madme_standard_margin"/>
+            <TextView android:textSize="16dp" android:textStyle="bold" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="@dimen/madme_standard_margin" android:text="@string/madme_debug_device_info_title"/>
+            <TextView android:id="@+id/madme_device_info_brand_debug" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="@dimen/madme_standard_margin"/>
+            <TextView android:id="@+id/madme_device_info_model_debug" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="@dimen/madme_standard_margin"/>
+            <TextView android:id="@+id/madme_device_os_ver_debug" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="@dimen/madme_standard_margin"/>
+            <TextView android:id="@+id/madme_device_sdk_ver_debug" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="@dimen/madme_standard_margin"/>
+            <TextView android:id="@+id/madme_device_client_ver_debug" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="@dimen/madme_standard_margin"/>
+            <TextView android:id="@+id/madme_device_app_id_debug" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="@dimen/madme_standard_margin"/>
+            <TextView android:id="@+id/madme_device_config_ver_debug" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="@dimen/madme_standard_margin"/>
+            <TextView android:textSize="16dp" android:textStyle="bold" android:id="@+id/madme_debug_configuration_info_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="@dimen/madme_standard_margin" android:text="@string/madme_debug_configuration_info_title"/>
+            <TextView android:textSize="14dp" android:id="@+id/madme_device_config_string" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="@dimen/madme_standard_margin"/>
+            <TextView android:textSize="16dp" android:textStyle="bold" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="@dimen/madme_standard_margin" android:text="@string/madme_debug_device_screen_info_title"/>
+            <TextView android:id="@+id/madme_device_screen_info_debug" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="@dimen/madme_standard_margin"/>
+            <TextView android:id="@+id/madme_network_country_iso" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="@dimen/madme_standard_margin"/>
+            <TextView android:id="@+id/madme_orientation_value" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="@dimen/madme_standard_margin"/>
+            <TextView android:id="@+id/madme_configuration_time" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="@dimen/madme_standard_margin"/>
+            <Button android:id="@+id/madme_send_raport" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/madme_standard_margin" android:text="@string/madme_send_report_debug" style="@style/MadmeCustomSaveButton"/>
+            <Button android:id="@+id/madme_get_ads" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/madme_standard_margin" android:text="@string/madme_offers_get_ads" style="@style/MadmeCustomSaveButton"/>
+        </LinearLayout>
+    </ScrollView>
+</FrameLayout>

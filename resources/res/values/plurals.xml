@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="Smooch_unreadMessagesText">
+        <item>%d unread message</item>
+        <item>%d unread messages</item>
+    </plurals>
+    <plurals name="mtrl_badge_content_description">
+        <item>%d new notification</item>
+        <item>%d new notifications</item>
+    </plurals>
+</resources>

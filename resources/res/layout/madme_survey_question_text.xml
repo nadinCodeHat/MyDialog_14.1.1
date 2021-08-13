@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="utf-8"?>
+<EditText xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:textSize="@dimen/madme_survey_edittext_font_size" android:gravity="top|left|center_vertical|center_horizontal|center|start" android:layout_width="match_parent" android:layout_height="100dp"/>

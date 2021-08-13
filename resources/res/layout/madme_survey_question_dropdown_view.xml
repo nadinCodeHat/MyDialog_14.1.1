@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:weightSum="10">
+    <com.madme.mobile.sdk.fragments.survey.SurveyTextView android:textSize="@dimen/madme_dropdown_text_size" android:textColor="@color/madme_survey_question_text_color" android:ellipsize="marquee" android:gravity="left" android:id="@android:id/text1" android:padding="@dimen/madme_standard_padding" android:layout_width="0dp" android:layout_height="wrap_content" android:singleLine="true" android:layout_weight="9"/>
+    <TextView android:textSize="14sp" android:textColor="@color/madme_dropdown_arrow" android:gravity="center_horizontal" android:id="@+id/madme_dropdown_arrow" android:layout_width="0dp" android:layout_height="wrap_content" android:text="▼" android:layout_weight="1" android:fontFamily="sans-serif-condensed"/>
+</LinearLayout>

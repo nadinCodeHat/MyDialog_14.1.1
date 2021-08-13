@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <bool name="madme_enable_ext_sbs1">false</bool>
+    <bool name="madme_enable_ext_sbs2">false</bool>
+    <bool name="madme_enable_sbs">false</bool>
+</resources>

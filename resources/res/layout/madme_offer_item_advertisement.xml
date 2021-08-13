@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="horizontal" android:background="@drawable/madme_card_background" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/madme_standard_margin">
+    <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <ImageView android:layout_gravity="center" android:id="@+id/madme_thumbnail" android:layout_width="80dp" android:layout_height="120dp" android:layout_marginLeft="@dimen/madme_standard_margin" android:layout_marginRight="@dimen/madme_standard_margin" android:scaleType="fitCenter" android:layout_alignParentLeft="true"/>
+        <View android:background="#c7d1d6" android:layout_width="1dp" android:layout_height="match_parent" android:layout_marginTop="@dimen/madme_standard_margin" android:layout_marginBottom="@dimen/madme_standard_margin"/>
+        <LinearLayout android:orientation="vertical" android:padding="@dimen/madme_standard_padding" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+                <androidx.appcompat.widget.AppCompatCheckBox android:id="@+id/madme_favourite_button" android:focusable="false" android:focusableInTouchMode="false" android:layout_width="28dp" android:layout_height="28dp" android:button="@drawable/madme_favorite_button_color" android:textOn="" android:textOff="" android:layout_alignParentRight="true"/>
+                <TextView android:id="@+id/madme_offer_text" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Offer Text can be long or can be short. You will never know ;-)" android:layout_toLeftOf="@+id/madme_favourite_button" style="@style/MadmeAdDetials"/>
+            </RelativeLayout>
+            <TextView android:id="@+id/madme_campaign_type" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/MadmeAdDetials"/>
+            <TextView android:id="@+id/madme_campaign_trigger" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/MadmeAdDetials"/>
+            <TextView android:id="@+id/madme_campaign_views" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/MadmeAdDetials"/>
+            <TextView android:id="@+id/madme_remaining_campaigne_views" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/MadmeAdDetials"/>
+            <TextView android:id="@+id/madme_start_date" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/MadmeAdDetials"/>
+            <TextView android:id="@+id/madme_end_date" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/MadmeAdDetials"/>
+            <TextView android:id="@+id/madme_tags" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/MadmeAdDetials"/>
+            <TextView android:id="@+id/madme_req_apps" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/MadmeAdDetials"/>
+            <TextView android:id="@+id/madme_req_apps_neg" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/MadmeAdDetials"/>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <com.madme.mobile.sdk.views.MadmeSeekBar android:id="@+id/madme_survey_q_c_seekbar" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10dp" android:thumb="@drawable/madme_rating_thumb"/>
+    <RelativeLayout android:id="@+id/madme_survey_q_c_label_parent" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="10dp">
+        <include android:id="@android:id/text1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentLeft="true" layout="@layout/madme_survey_question_item_slider_label"/>
+        <LinearLayout android:orientation="horizontal" android:id="@+id/madme_survey_q_c_labels" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+        <include android:id="@android:id/text2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" layout="@layout/madme_survey_question_item_slider_label"/>
+    </RelativeLayout>
+</LinearLayout>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="match_parent" android:layout_height="match_parent">
+    <ImageView android:id="@+id/madme_img_thankyou_background" android:layout_width="match_parent" android:layout_height="match_parent" android:scaleType="centerCrop"/>
+    <RelativeLayout android:id="@+id/madme_ad_view_header" android:paddingLeft="@dimen/madme_ad_header_padding_left" android:paddingTop="@dimen/madme_ad_header_padding_top" android:paddingRight="@dimen/madme_ad_header_padding_right" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+    <Button android:textColor="@color/madme_survey_thankyou_close_button_text_color" android:layout_gravity="bottom|center_vertical|center_horizontal|center" android:id="@+id/madme_survey_button_thankyou_close" android:background="@drawable/madme_survey_thankyou_close_button_background" android:layout_width="wrap_content" android:layout_height="40dp" android:layout_marginBottom="30dp" android:text="@string/madme_survey_thankyou_close" android:textAllCaps="false"/>
+</FrameLayout>

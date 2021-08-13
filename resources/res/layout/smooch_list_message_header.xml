@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:padding="16dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <TextView android:textSize="@dimen/Smooch_header" android:textColor="@color/Smooch_header" android:id="@+id/smooch_welcome_message" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="8dp" android:text="@string/Smooch_startOfConversation" android:lineSpacingMultiplier="@dimen/Smooch_lineSpacingMultiplier"/>
+    <TextView android:textSize="@dimen/Smooch_header" android:textColor="@color/Smooch_header" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/Smooch_welcome" android:lineSpacingMultiplier="@dimen/Smooch_lineSpacingMultiplier"/>
+</LinearLayout>
